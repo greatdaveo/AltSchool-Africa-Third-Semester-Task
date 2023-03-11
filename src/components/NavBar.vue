@@ -15,6 +15,8 @@ export default {
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+
 .nav-bar {
   /* background: rgb(229, 232, 236); */
   background: rgb(133, 120, 132);
@@ -38,18 +40,68 @@ export default {
 }
 
 .nav-bar a h1 {
-  color: gold;
+  /* color: gold; */
   box-shadow: 0px 2px 15px 2px #707074;
   padding: 0.5rem;
   margin: 0.5rem;
   font-size: 1rem;
   font-weight: 1000;
+  /* font-family: "Montserrat", sans-serif; */
 }
 
-.nav-bar  {
-  text-align: center;
+.nav-bar {
+  /* text-align: center; */
   margin: 0.1rem;
   padding: 0.5rem;
-  color: white;
+  display: flex;
+
 }
+
+.nav-bar h1:nth-child(2) {
+  color: transparent;
+  /* animation: animate 2s ease-in-out infinite; */
+  -webkit-text-stroke: 1px gold;
+  overflow: hidden;
+  animation: navbar 5s linear infinite;
+}
+
+@keyframes navbar {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+  }
+  10% {
+    transform: translate3d(-200%, 0, 0);
+  }
+}
+
+/* @keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+} */
 </style>
