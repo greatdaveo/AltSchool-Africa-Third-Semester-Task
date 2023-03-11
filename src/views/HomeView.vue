@@ -1,7 +1,7 @@
 <template>
   <div class="home-container">
     <!-- The Top Nav Bar -->
-    <NavBar />
+    <!-- <NavBar /> -->
 
     <!-- The Side Bar -->
     <SideBar />
@@ -10,13 +10,17 @@
       <!-- This is the user Bio -->
       <img
         class="robot-img"
-        src="../assets/idea-img.jpg"
+        src="../assets/avartar-with-pc.svg"
         alt="Robot Illustration"
       />
 
       <div class="bio">
         <h1 v-if="error">{{ error }}</h1>
-        <img :src="userDetail.avatar_url" alt="User Image" />
+        <img
+          class="user-avatar"
+          :src="userDetail.avatar_url"
+          alt="User Image"
+        />
         <h1>
           {{ userDetail.name }}
           <!-- (<span>{{ userDetail.login }}</span
@@ -52,6 +56,16 @@ export default {
 </script>
 
 <style>
+.home-container {
+  /* background-image: linear-gradient(rgba(0, 0, 0.5), hsla(0, 0%, 0%, 0.5)),
+    url("../assets/galaxy-1.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-x: 67%; */
+}
+
 .bio-container {
   display: flex;
   margin: -35rem auto;
@@ -61,11 +75,13 @@ img {
   border-radius: 50%;
   width: 20%;
   margin-top: 1rem;
+  background: inherit;
 }
 
 .robot-img {
   float: left;
   margin-left: 15rem;
+  width: 30%;
 }
 
 .bio {
@@ -76,10 +92,10 @@ img {
   padding: 1rem;
   width: 40%;
   line-height: 2rem;
+  color: rgb(190, 177, 177);
 }
 
 .bio p {
   /* width: 50%; */
-
 }
 </style>

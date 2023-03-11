@@ -2,7 +2,11 @@
   <div>
     <H1>Repo List: </H1>
     <div v-for="repo in repos" :key="repo.id">
-      <p>{{ repo.name }}</p>
+      <h2>{{ repo.name }}</h2>
+      <p>Watchers: {{ repo.watchers }}</p>
+      <p>Create Time: {{ repo.created_at }}</p>
+      <p>Updated Time: {{ repo.updated_at }}</p>
+      <p>Pushed Time: {{ repo.pushed_at }}</p>
     </div>
   </div>
 </template>

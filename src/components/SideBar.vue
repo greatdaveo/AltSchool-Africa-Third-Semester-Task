@@ -19,14 +19,15 @@ export default {
 
 <style>
 .side-bar {
-  background: green;
+  background: inherit;
   max-height: 100%;
   height: 40rem;
   width: 10rem;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
+  box-shadow: 0px 2px 15px 2px #91929b;
 }
 
 .side-bar li {
@@ -36,5 +37,7 @@ export default {
 
 .side-bar a {
   text-decoration: none;
+  font-size: 1.2rem;
+  color: gold;
 }
 </style>

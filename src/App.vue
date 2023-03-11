@@ -1,6 +1,22 @@
 <template>
-  <router-view />
+  <div>
+    <!-- The Top Nav Bar -->
+    <NavBar />
+
+    <div class="app-body">
+      <router-view />
+    </div>
+  </div>
 </template>
+
+<script>
+import NavBar from "./components/NavBar.vue";
+import SideBar from "./components/SideBar.vue";
+
+export default {
+  components: { NavBar, SideBar },
+};
+</script>
 
 <style>
 * {
@@ -13,12 +29,16 @@
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* text-align: center; */
   color: #2c3e50;
+}
 
-  /* background-image:  linear-gradient(135deg, #c9cada 25%, transparent 25%), linear-gradient(225deg, #c9cada 25%, transparent 25%), linear-gradient(45deg, #c9cada 25%, transparent 25%), linear-gradient(315deg, #c9cada 25%, #ebebf3 25%);
-background-position:  10px 0, 10px 0, 0 0, 0 0;
-background-size: 20px 20px;
-background-repeat: repeat; */
+.app-body {
+  background-image: linear-gradient(rgba(0, 0, 0.5), hsla(0, 0%, 0%, 0.5)),
+    url("./assets/galaxy-1.jpg");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-position-x: 67%;
 }
 </style>
