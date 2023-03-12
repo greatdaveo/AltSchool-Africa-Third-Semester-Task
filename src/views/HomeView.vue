@@ -15,7 +15,7 @@
       />
 
       <div class="bio">
-        <h1 v-if="error">{{ error }}</h1>
+        <h1 v-if="error" class="error">{{ error }}</h1>
         <img
           class="user-avatar"
           :src="userDetail.avatar_url"
@@ -34,6 +34,9 @@
         <p>Public repos: {{ userDetail.public_repos }}</p>
       </div>
     </div>
+    <!-- <div v-else class="loading">
+      <img src="https://tenor.com/bpeK1.gif" alt="" />
+    </div> -->
   </div>
 </template>
 

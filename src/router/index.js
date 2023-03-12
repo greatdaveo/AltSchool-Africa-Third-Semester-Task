@@ -4,6 +4,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import ReposPage from "../pages/ReposPage.vue";
 import DetailsPage from "@/pages/DetailsPage.vue";
+import PageNotFound from "../pages/PageNotFound.vue";
 
 const routes = [
   {
@@ -21,6 +22,11 @@ const routes = [
     name: "DetailsPage",
     component: DetailsPage,
     props: true,
+  },
+  {
+    path: "/:catchAll(.*)",
+    name: "PageNotFound",
+    component: PageNotFound,
   },
 ];
 
