@@ -71,7 +71,7 @@ export default {
 
 .bio-container {
   display: flex;
-  margin: -35rem auto;
+  margin: -30rem auto;
 }
 
 img {
