@@ -1,6 +1,9 @@
-import ReposListVue from "@/components/ReposList.vue";
+// import ReposList from "@/components/ReposList.vue";
+
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import ReposPage from "../pages/ReposPage.vue";
+import DetailsPage from "@/pages/DetailsPage.vue";
 
 const routes = [
   {
@@ -10,9 +13,15 @@ const routes = [
   },
   {
     path: "/repositories",
-    name: "repositories",
-    component: ReposListVue
-  }
+    name: "ReposPage",
+    component: ReposPage,
+  },
+  {
+    path: "/repository/details/:name",
+    name: "DetailsPage",
+    component: DetailsPage,
+    props: true,
+  },
 ];
 
 const router = createRouter({

@@ -78,6 +78,10 @@ img {
   background: inherit;
 }
 
+img.user-avatar {
+  border: 1px solid gold;
+}
+
 .robot-img {
   float: left;
   margin-left: 15rem;

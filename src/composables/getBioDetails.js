@@ -6,12 +6,12 @@ const getBioDetails = () => {
 
   const loadBioDetails = async () => {
     try {
-      let data = await fetch("https://api.github.com/users/greatdaveo");
-      // console.log(data);
-      if (!data.ok) {
+      let res = await fetch("https://api.github.com/users/greatdaveo");
+      // console.log(res);
+      if (!res.ok) {
         throw Error("Unable to get user infos!!! 😔");
       }
-      userDetail.value = await data.json();
+      userDetail.value = await res.json();
       // console.log(userDetail);
     } catch (err) {
       error.value = err.message;

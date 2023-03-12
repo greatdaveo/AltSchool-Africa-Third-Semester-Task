@@ -62,7 +62,7 @@ export default {
   /* animation: animate 2s ease-in-out infinite; */
   -webkit-text-stroke: 1px gold;
   overflow: hidden;
-  animation: navbar 5s linear infinite;
+  animation: navbar 7s linear infinite;
 }
 
 @keyframes navbar {
