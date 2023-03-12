@@ -60,13 +60,13 @@ export default {
 
 <style>
 .home-container {
-  /* background-image: linear-gradient(rgba(0, 0, 0.5), hsla(0, 0%, 0%, 0.5)),
+  background-image: linear-gradient(rgba(0, 0, 0.5), hsla(0, 0%, 0%, 0.5)),
     url("../assets/galaxy-1.jpg");
   height: 100vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-position-x: 67%; */
+  background-position-x: 67%;
 }
 
 .bio-container {

@@ -89,11 +89,6 @@ export default {
   border-radius: 10%;
 }
 
-.repo-container h2 {
-  /* color: rgb(238, 217, 217); */
-  /* margin: 0.5rem; */
-}
-
 .repo-container h3,
 h2 {
   color: #f0e2e2;

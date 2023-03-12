@@ -4,7 +4,7 @@
       <h1>{{ `<greatedaveo />` }}</h1>
     </router-link>
 
-    <h1>Hello, I am David Olowomeye</h1>
+    <h1>Hello, welcome to my GitHub API website</h1>
   </nav>
 </template>
 
@@ -40,7 +40,8 @@ export default {
 }
 
 .nav-bar a h1 {
-  /* color: gold; */
+  color: white;
+  -webkit-text-stroke: 1px gold;
   box-shadow: 0px 2px 15px 2px #707074;
   padding: 0.5rem;
   margin: 0.5rem;
