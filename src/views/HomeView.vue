@@ -67,6 +67,7 @@ export default {
   background-position: center;
   background-size: cover;
   background-position-x: 67%;
+  /* height: cover; */
 }
 
 .bio-container {
