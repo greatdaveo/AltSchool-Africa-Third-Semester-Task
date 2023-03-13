@@ -1,19 +1,5 @@
 # altschool-third-semester-task
 
-## Project setup
-```
-npm install
-```
+# DEMO LINK: https://david-olowomeye-third-semester-project.vercel.app
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## About Project: A Vue Js application using GitHub Api.
