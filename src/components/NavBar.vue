@@ -72,4 +72,11 @@ export default {
     transform: translate3d(-200%, 0, 0);
   }
 }
+
+@media (max-width: 680px) {
+  .nav-bar a h1 {
+    font-size: 0.8rem;
+    padding: 0.2rem;
+  }
+}
 </style>

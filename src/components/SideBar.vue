@@ -20,8 +20,7 @@ export default {
 <style>
 .side-bar {
   background: inherit;
-  max-height: 100%;
-  height: 40rem;
+  height: 100%;
   width: 10rem;
   display: flex;
   flex-direction: column;
@@ -56,5 +55,13 @@ export default {
 .side-bar a:hover {
   color: blue;
   color: inherit;
+}
+
+@media (max-width: 485px) {
+
+  
+  .side-bar {
+    display: none;
+  }
 }
 </style>

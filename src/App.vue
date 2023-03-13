@@ -35,11 +35,12 @@ export default {
 .app-body {
   background-image: linear-gradient(rgba(0, 0, 0.5), hsla(0, 0%, 0%, 0.5)),
     url("./assets/galaxy-1.jpg");
-  height: fit-content;
+  height: cover;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-position-y: 100%;
-  background-position-x: 67%;
+
+  /* background-position-y: 100%;
+  background-position-x: 67%; */
 }
 </style>
