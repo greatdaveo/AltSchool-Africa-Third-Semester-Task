@@ -12,5 +12,6 @@ export default {};
   color: Gold;
   padding: 2rem;
   text-align: center;
+  height: 100vh;
 }
 </style>

@@ -37,7 +37,7 @@ export default {
 <style>
 .repo-list {
   text-align: center;
-  /* overflow: hidden; */
+  margin: 0 auto;
 }
 
 .repo-list h1 {
@@ -46,8 +46,6 @@ export default {
   font-size: 3rem;
   color: white;
   -webkit-text-stroke: 2px gold;
-  /* color: transparent; */
-  /* overflow: hidden; */
 }
 
 @keyframes animate {

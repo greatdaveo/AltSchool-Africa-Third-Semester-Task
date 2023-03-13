@@ -19,7 +19,7 @@
       </div>
     </div>
 
-    <div>
+    <div class="thumbs-robot-container">
       <img
         class="thumbs-robot"
         src="../assets/robot-thumbs-up-removebg-preview.png"
@@ -53,8 +53,7 @@ export default {
 }
 
 .repo-container {
-  float: left;
-  margin-left: 2rem;
+  margin: 1rem auto;
 }
 
 .btn-container {
@@ -86,7 +85,7 @@ export default {
   box-shadow: 0px 2px 15px 2px #99a810;
   margin: 1rem;
   display: grid;
-  grid-template-columns: 2fr ;
+  grid-template-columns: 2fr;
 }
 
 .repos-list:hover {
@@ -103,5 +102,12 @@ export default {
   width: 50%;
   float: right;
   margin-left: 30rem;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 850px) {
+  .thumbs-robot-container {
+    display: none;
+  }
 }
 </style>

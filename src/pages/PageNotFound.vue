@@ -19,6 +19,7 @@ export default {};
 <style>
 .PNF-container {
   text-align: center;
+  height: 100vh;
 }
 
 .PNF-text {

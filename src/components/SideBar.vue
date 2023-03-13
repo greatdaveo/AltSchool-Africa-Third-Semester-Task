@@ -7,6 +7,9 @@
       <li>
         <router-link to="/repositories">Repositories</router-link>
       </li>
+      <li>
+        <router-link to="/:catchAll(.*)">Test Error</router-link>
+      </li>
     </ul>
   </div>
 </template>
@@ -58,8 +61,6 @@ export default {
 }
 
 @media (max-width: 485px) {
-
-  
   .side-bar {
     display: none;
   }

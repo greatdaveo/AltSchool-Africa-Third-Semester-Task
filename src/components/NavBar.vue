@@ -1,10 +1,10 @@
 <template>
   <nav class="nav-bar">
     <router-link to="/">
-      <h1>{{ `<greatedaveo />` }}</h1>
+      <h1>{{ `greatedaveo` }}</h1>
     </router-link>
 
-    <h1>Hello, welcome to my GitHub API website</h1>
+    <h1>👋 Hello, welcome to my GitHub API website 😊</h1>
   </nav>
 </template>
 
@@ -15,7 +15,7 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nabla&family=Outfit:wght@1000");
 
 .nav-bar {
   /* background: rgb(229, 232, 236); */
@@ -44,14 +44,14 @@ export default {
   -webkit-text-stroke: 1px gold;
   box-shadow: 0px 2px 15px 2px #707074;
   padding: 0.5rem;
-  margin: 0.5rem;
-  font-size: 1rem;
+  margin: 0.2rem;
+  font-size: 1.2rem;
   font-weight: 1000;
-  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Nabla", sans-serif;
+  border-radius: 20px;
 }
 
 .nav-bar {
-  /* text-align: center; */
   margin: 0.1rem;
   padding: 0.5rem;
   display: flex;
@@ -62,21 +62,20 @@ export default {
   -webkit-text-stroke: 1px gold;
   overflow: hidden;
   animation: navbar 7s linear infinite;
+  font-size: 1.5rem;
 }
 
 @keyframes navbar {
   0% {
-    transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 10%, 0);
   }
-  10% {
-    transform: translate3d(-200%, 0, 0);
-  }
+  /* 10% {
+    transform: translate3d(-10%, 0, 0);
+  } */
 }
 
 @media (max-width: 680px) {
-  .nav-bar a h1 {
-    font-size: 0.8rem;
-    padding: 0.2rem;
+  .nav-bar h1:nth-child(2) {
   }
 }
 </style>

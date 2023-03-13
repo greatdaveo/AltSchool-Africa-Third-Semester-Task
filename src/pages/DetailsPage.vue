@@ -66,11 +66,11 @@ export default {
   justify-content: center;
   align-items: center;
   margin: 0rem 5rem;
+  height: 100vh;
 }
 
 .details-page h1 {
-  margin-top: 2rem;
-  color: ;
+  margin-top: 5rem;
   -webkit-text-stroke: 0.5px white;
 }
 

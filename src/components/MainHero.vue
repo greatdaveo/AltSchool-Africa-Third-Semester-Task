@@ -7,6 +7,20 @@
       alt="Robot Illustration"
     />
 
+    <div class="hero-links-container">
+      <ul>
+        <li>
+          <router-link to="/">Home</router-link>
+        </li>
+        <li>
+          <router-link to="/repositories">Repositories</router-link>
+        </li>
+        <li>
+          <router-link to="/:catchAll(.*)">Test Error</router-link>
+        </li>
+      </ul>
+    </div>
+
     <div class="bio">
       <h1 v-if="error" class="error">{{ error }}</h1>
       <img class="user-avatar" :src="userDetail.avatar_url" alt="User Image" />
@@ -46,6 +60,31 @@ export default {
   margin: -30rem auto;
 }
 
+.hero-links-container {
+  display: none;
+  justify-content: space-between;
+  margin: 1rem;
+}
+
+.hero-links-container ul {
+  display: flex;
+  list-style: none;
+}
+
+.hero-links-container a {
+  margin: 0.5rem;
+  border: 1px solid gold;
+  padding: 0.7rem;
+  text-decoration: none;
+  color: gold;
+}
+
+.hero-links-container a:hover {
+  color: inherit;
+  border: 1px solid blue;
+  background: white;
+}
+
 img {
   border-radius: 50%;
   width: 20%;
@@ -72,6 +111,7 @@ img.user-avatar {
   width: 40%;
   line-height: 2rem;
   color: rgb(190, 177, 177);
+  border-radius: 30px;
 }
 
 /* THE MEDIA QUERY */
@@ -109,12 +149,13 @@ img.user-avatar {
     display: flex;
     position: absolute;
     margin: 4rem auto;
-    /* align-items: center;
-    justify-content: center; */
+  }
+
+  .hero-links-container {
+    display: flex;
   }
 
   .bio {
-    /* justify-content: center; */
     margin: 3rem auto;
     width: 70%;
   }
